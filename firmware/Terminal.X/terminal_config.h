@@ -49,6 +49,12 @@ enum c1_mode {
   C1_MODE_8BIT = 1,
 };
 
+enum new_line_mode {
+  off = 0,
+  auto_LF = 1,
+  auto_CR = 2,
+};
+
 enum charset {
   CHARSET_UTF8 = 0,
   CHARSET_ISO_8859_1 = 1,
@@ -117,7 +123,8 @@ struct terminal_config {
 
   bool send_receive_mode;
 
-  bool new_line_mode;
+//  bool new_line_mode;
+  enum new_line_mode new_line_mode;
   bool cursor_key_mode;
   bool auto_repeat_mode;
   bool ansi_mode;

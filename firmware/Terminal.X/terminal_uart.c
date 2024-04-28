@@ -87,11 +87,14 @@ static void receive_sub(struct terminal *terminal, character_t character) {
 }
 
 static void receive_cr(struct terminal *terminal, character_t character) {
+  if (terminal->new_line_mode == auto_LF)
+    terminal_screen_index(terminal, 1);
+  
   terminal_screen_carriage_return(terminal);
 }
 
 static void receive_lf(struct terminal *terminal, character_t character) {
-  if (terminal->new_line_mode)
+  if (terminal->new_line_mode == auto_CR)
     terminal_screen_carriage_return(terminal);
 
   terminal_screen_index(terminal, 1);

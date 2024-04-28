@@ -19,6 +19,11 @@
       <itemPath>luminance.h</itemPath>
       <itemPath>luminance_table.h</itemPath>
     </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="true">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
                    projectFiles="true">
@@ -65,11 +70,6 @@
       <itemPath>USB/usb_descriptors.c</itemPath>
       <itemPath>USB/usb_config.h</itemPath>
       <itemPath>USB/HardwareProfile.h</itemPath>
-    </logicalFolder>
-    <logicalFolder name="ExternalFiles"
-                   displayName="Important Files"
-                   projectFiles="false">
-      <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>

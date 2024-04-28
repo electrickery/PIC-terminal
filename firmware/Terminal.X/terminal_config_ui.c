@@ -248,7 +248,14 @@ static const struct terminal_ui_menu menus[] = {
               {"normal"},
               {NULL},
           }},
-         {"New line mode (LNM)", get_new_line_mode_ptr, &off_on_choices},
+//         {"New line mode (LNM)", get_new_line_mode_ptr, &off_on_choices},
+         {"New line mode (LNM)", get_new_line_mode_ptr, 
+          &(const struct terminal_ui_choice[]){
+              {"off"},
+              {"auto LF"},
+              {"auto CR"},
+              {NULL},
+           }},         
          {"Cursor key mode (DECCKM)", get_cursor_key_mode_ptr,
           &(const struct terminal_ui_choice[]){
               {"normal"},
