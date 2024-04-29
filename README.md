@@ -15,6 +15,7 @@ DIY kit including parts and PCB is available on [Tindie](https://www.tindie.com/
 * [Pickle](https://www.pedalpc.com/blog/program-pic-raspberry-pi/)
 * [Raspberry Pi Setup](https://wiki.kewl.org/dokuwiki/boards:rpi)
 
+**********************
 
 ## Some useful info
 
@@ -22,7 +23,7 @@ DIY kit including parts and PCB is available on [Tindie](https://www.tindie.com/
 
 My PIC-terminal is mounted on the back of a small 10" TFT monitor using the Vesa mounting points. 3D printer model files are in the case directory.
 
-The RS-232C connection is interfaced with a cheap TTL-RS232C converter. It protects the PIC pins against +/- 12V. The Rx pint has a voltage divider but the Tx pin doesn't, and signal reversal is very common with RS-232 conenctions.
+The RS-232C connection is interfaced with a cheap TTL-RS232C converter. It protects the PIC pins against +/- 12V. The Rx pint has a voltage divider but the Tx pin doesn't, and signal reversal is very common with RS-232 connections. The "Signal levels" setting is set to TTL.
 
 ### How to compile the project
 
