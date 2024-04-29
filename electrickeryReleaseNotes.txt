@@ -1,0 +1,9 @@
+2024-04-28:
+- Forked from https://github.com/petrohi/terminal
+- Modified the new_line_mode option to support three values: off, AUTOCR and AUTOLF. 
+  This means the bool is changed to an enum.
+- Changed the behaviour of the receive_cr method so it can insert a linefeed when new_line_mode == AUTOLF.
+- Changed the behaviour of the receive_lf method so it works woth the enum.
+- Here I got lucky, as the Save functionality still worked, and the SETUP pages us another mechanisn to display text.
+- For this testing period the PRODUCT_VERSION number is 3.2.electrickery. (terminal.c)
+- When AUTOCR or AUTOLF is active, the startup message in the PRODUCT_COPYRIGHT is printed with extra lines.
